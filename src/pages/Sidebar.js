@@ -111,7 +111,7 @@ export default function Sidebar() {
                             <ListItemText primary='Client' sx={{ opacity: open ? 1 : 0 }} />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>navigate('/analytics')}>
+                    <ListItem disablePadding sx={{ display: 'block' }} onClick={()=>navigate('/dashboard')}>
                         <ListItemButton
                             sx={{
                                 minHeight: 48,
@@ -128,7 +128,7 @@ export default function Sidebar() {
                             >
                                 <AutoGraphIcon />
                             </ListItemIcon>
-                            <ListItemText primary='Analytics' sx={{ opacity: open ? 1 : 0 }} />
+                            <ListItemText primary='Dashboard' sx={{ opacity: open ? 1 : 0 }} />
                         </ListItemButton>
                     </ListItem>
                 </List>

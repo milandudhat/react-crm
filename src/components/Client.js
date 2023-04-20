@@ -1,7 +1,7 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../pages/Sidebar'
 import { Box, Radio, RadioGroup, Stack } from '@mui/material'
-import Navbar from '../components/Navbar'
+import Navbar from '../pages/Navbar'
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -184,7 +184,10 @@ const Client = () => {
                                                                         {/* // Checkbox Group for Type Direct sales , Consultative sales and Request for Proposal */}
                                                                         <FormControl component="fieldset">
                                                                             <FormLabel component="legend">Type</FormLabel>
-                                                                            <FormGroup aria-label="position" row value={formik.values.type}>
+                                                                            <FormGroup aria-label="position" row value={formik.values.type} sx={{
+                                                                                display: 'flex',
+                                                                                flexDirection: 'row',
+                                                                            }}>
                                                                                 <FormControlLabel
                                                                                     value="Direct sales"
                                                                                     control={<Checkbox color="primary" />}

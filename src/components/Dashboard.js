@@ -1,15 +1,15 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../pages/Sidebar'
 import { Box } from '@mui/material'
-import Navbar from '../components/Navbar'
+import Navbar from '../pages/Navbar'
 import Grid from '@mui/material/Grid';
-import BarChart from '../charts/barChart';
+import BarChart from '../utils/charts/barChart';
 import '../Dash.css'
 import Stack from '@mui/material/Stack';
 
 
 
-const Analytics = () => {
+const Dashboard = () => {
     return (
         <>
           <div className='bgcolor'>
@@ -30,4 +30,4 @@ const Analytics = () => {
       )
 }
 
-export default Analytics    
+export default Dashboard    
