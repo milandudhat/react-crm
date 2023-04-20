@@ -20,7 +20,7 @@ import Select from '@mui/material/Select';
 // import FormGroup from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
-
+// import Array from '@mui/material/Array';
 
 import '../Dash.css'
 
@@ -48,8 +48,7 @@ const Client = () => {
             country: Yup.string()
                 .max(20, 'Must be 20 characters or less')
                 .required('Country is Required'),
-
-            type: Yup.string()
+            type: Yup.array().of(Yup.string())
                 .max(20, 'Must be 20 characters or less')
                 .required('Type is Required'),
             date: Yup.string()
@@ -184,8 +183,8 @@ const Client = () => {
                                                                     <div style={{ margin: '10px 0' }} >
                                                                         {/* // Checkbox Group for Type Direct sales , Consultative sales and Request for Proposal */}
                                                                         <FormControl component="fieldset">
-                                                                            <FormLabel component="legend" value={formik.values.type}>Type</FormLabel>
-                                                                            <FormGroup aria-label="position" row>
+                                                                            <FormLabel component="legend">Type</FormLabel>
+                                                                            <FormGroup aria-label="position" row value={formik.values.type}>
                                                                                 <FormControlLabel
                                                                                     value="Direct sales"
                                                                                     control={<Checkbox color="primary" />}
@@ -194,7 +193,7 @@ const Client = () => {
                                                                                     name="type"
                                                                                     onChange={formik.handleChange}
                                                                                     onBlur={formik.handleBlur}
-                                                                                value={formik.values.type}
+                                                                                // value={formik.values.type}
                                                                                 />
                                                                                 <FormControlLabel
                                                                                     value="Consultative sales"
@@ -204,7 +203,7 @@ const Client = () => {
                                                                                     name="type"
                                                                                     onChange={formik.handleChange}
                                                                                     onBlur={formik.handleBlur}
-                                                                                value={formik.values.type}
+                                                                                // value={formik.values.type}
                                                                                 />
                                                                                 <FormControlLabel
                                                                                     value="Request for Proposal"
@@ -214,7 +213,7 @@ const Client = () => {
                                                                                     name="type"
                                                                                     onChange={formik.handleChange}
                                                                                     onBlur={formik.handleBlur}
-                                                                                value={formik.values.type}
+                                                                                    // value={formik.values.type}
                                                                                 />
                                                                             </FormGroup>
                                                                         </FormControl>
