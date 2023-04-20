@@ -1,0 +1,55 @@
+.paddingAll{
+    padding: 8px;
+}
+
+
+.pricetitle{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.pricesubtitle{
+    /* font-size: 17px; */
+    /* font-weight: bold; */
+    color: #000000;
+    padding-top: 15px;
+}
+
+
+.iconstyle{
+    /* font-size: 20px; */
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.iconstyle2{
+    /* font-size: 20px; */
+    /* color: #000000; */
+    margin-top: 15px;
+    /* margin-left: 20px; */
+    color: #ECEFF1;
+}
+
+.pricesubtitle2{
+    font-size: 15px;
+    /* font-weight: bold; */
+    /* color: #000000; */
+    /* padding-top: 20px; */
+    color: #ECEFF1;
+}
+
+
+
+.cardcolor{
+    color: #575656;
+
+}
+
+
+.bgcolor{
+    min-height: 100vh;
+    background-color: #ECEFF1;
+    background: linear=gradient(158deg , rgb(224,224,224) 0% , rrgb(233,237,254) 100%);
+}
